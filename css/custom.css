@@ -471,7 +471,7 @@ select option[disabled]:first-child {
 /*=========================Section Help========================*/
 .help{
   background: #2B2A29;
-  padding-top: 5%;
+  padding-top: 52px;
   padding-bottom: 86px;
 }
 .help .btn {
@@ -505,6 +505,7 @@ select option[disabled]:first-child {
 }
 .help__description ul{
   color: var(--color-red);
+  padding-left: 18px;
 }
 .help__description ul span{
   color: #FFFFFF;
@@ -698,7 +699,7 @@ select option[disabled]:first-child {
 
 /*=========================Section Reviews========================*/
 .reviews{
-  padding:5% 5% 102px 5%;
+  padding:80px 5% 102px 5%;
 }
 .reviews h5{
   color: var(--text-color-dark);

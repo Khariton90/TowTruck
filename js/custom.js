@@ -6,8 +6,6 @@ const form = document.querySelectorAll('.help-form input');
 
 const scrollTo = (e) => {
     e.preventDefault();
-    let navBar = document.querySelector('.navbar').offsetHeight;
-    console.log(navBar)
     let target = e.target.getAttribute('data-link');
     let section = document.querySelector(`.${target}`).offsetTop;
     window.scrollTo({
