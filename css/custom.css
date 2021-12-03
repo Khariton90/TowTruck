@@ -1,0 +1,1277 @@
+:root {
+  --text-color-dark: #2B2A29;
+  --color-red: #E31E24;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/font/Roboto-Regular.ttf');
+  src: url('../font/Roboto-Regular.ttf') format('ttf'),
+    url('../font/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+#map{
+  width: 100%;
+  height: 600px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100%;
+  background-color: #F9F9F9
+}
+html, body{
+  min-width: 320px;
+}
+.navbar{
+  background-color: #424242;
+}
+.tel{
+  font-size: calc(20px + 4 * ((100vw - 375px)/ (1920 - 375)));
+  color: #FFED00!important;
+  font-weight: bold;
+}
+.nav-link{
+  font-weight: bold;
+  font-size: 1rem;
+  color: #FFFFFF!important;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.navbar-brand svg{
+  height: 100%;
+}
+u{
+  text-decoration-color: #FFED00!important;
+}
+.section h5{
+  font-weight: bold;
+  font-size: calc(34px + 8 * ((100vw - 375px) / (1920 - 375)));
+  color: var(--text-color-dark);
+}
+section, header,footer{
+  max-width: 2200px;
+  margin: 0 auto;
+}
+/*=========================Section Header========================*/
+.header{
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-height: 568px;
+}
+.header__bg{
+  background: url('../img/header/traced.svg') 70% 50% no-repeat;
+  min-height: 600px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: flex-end;
+  padding: 0 0 20px;
+  z-index: -1;
+}
+.header__autos:first-child{
+  display: none;
+}
+.towtruck{
+  width: 85%;
+  float: right;
+}
+h1{
+  font-weight: bold;
+  font-size: calc(32px + 32 * ((100vw - 375px) / (1920 - 375)));
+  line-height: calc(34px + 40 * ((100vw - 375px) / (1920 - 375)));
+  color: #2B2A29;
+  padding-top: 150px;
+}
+.header .wrapper{
+  padding: 0 15px 0 5%;
+}
+.header__call{
+  padding-top: 5%;
+}
+.subtitle{
+  font-size: calc(22px + 22 * ((100vw - 375px) / (1920 - 375)));
+  text-decoration: underline;
+  text-decoration-color: #FFED00;
+}
+.call{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.call span:first-child{
+  font-weight: 900;
+  font-size: calc(14px + 4 * ((100vw - 375px) / (1920 - 375)));
+  color: var(--text-color-dark);
+  margin-right: 15px;
+}
+.call__button{
+  height: 20.4px;
+  background: #E31E24;
+  border-radius: 50px;
+  color: #F9F9F9;
+  padding: 6px 20px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+  border: none;
+}
+.call__button:hover{
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 3px #ccc;
+}
+.info-icon{
+  width: 17px;
+  height: 17px;
+}
+@media (min-width: 380px){
+  .header__call{
+    padding-top: 6%;
+  }
+  .call__button{
+    margin-top: 0;
+  }
+}
+@media (min-width: 400px){
+  .header__bg{
+    padding: 0;
+  }
+  .header{
+    min-height: 650px;
+  }
+}
+@media (min-width: 500px){
+  .towtruck{
+    width: 70%;
+    float: right;
+  }
+}
+@media (min-width: 600px){
+  .towtruck{
+    width: 65%;
+  }
+  .header__call{
+    padding-top: 4%;
+  }
+}
+@media (min-width: 780px){
+  .header{
+    min-height: 600px;
+    height: 700px;
+  }
+  .header__bg{
+    background-size: contain;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  .header__autos:first-child{
+    display: block;
+  }
+  .header__autos{
+    display: block;
+    align-items: flex-end;
+  }
+  .towtruck{
+    width: 100%;
+    float: right;
+  }
+  .call span:first-child{
+    margin-right: 34px;
+  }
+}
+@media(min-width: 1100px){
+  .header__bg{
+    column-gap: 70px;
+  }
+  .header__call{
+    padding-top: 2%;
+  }
+}
+@media (min-width: 1300px){
+  .header{
+    min-height: 900px;
+  }
+}
+@media (min-width: 1440px){
+  h1{
+    padding-top: 140px;
+  }
+  .header__bg{
+    background: url('../img/header/traced.svg') 50% 50% no-repeat;
+    background-size: contain;
+    column-gap: 300px;
+  }
+}
+
+@media( min-width:1920px ){
+  h1{
+    font-size: 64px;
+    line-height: 74px;
+  }
+  .subtitle{
+    font-size: 44px;
+  }
+}
+.info-icon{
+  transition: all 0.3s ease;
+  animation: anim 2.5s infinite;
+}
+.info-icon:hover{
+  animation-play-state: paused;
+}
+@keyframes anim{
+  0%{
+    opacity: 0;
+  }50%{
+    opacity: 1;
+  }100%{
+    opacity: 0;
+  }
+}
+/*=========================Section Header========================*/
+
+
+/*=========================Section Reasons========================*/
+
+.reasons{
+  padding-top: 54px;
+  background-color: #E9E7E8;
+  padding-bottom: 5%;
+}
+.reasons h2{
+  color: var(--text-color-dark);
+  font-weight: bold;
+  font-size: 3rem;
+  padding-left: 5%;
+  padding-bottom: 58px;
+}
+
+.card-reasons{
+  background: #FBFBFB;
+  box-shadow: 2px 2px 5px rgba(110, 110, 110, 0.9), -2px -2px 4px rgba(255, 255, 255, 0.9), 2px -2px 4px rgba(110, 110, 110, 0.2), -2px 2px 4px rgba(110, 110, 110, 0.2), inset -1px -1px 2px rgba(110, 110, 110, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.card-reasons h3{
+  color: var(--text-color-dark);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 5%;
+}
+.card-reasons p{
+  color: var(--text-color-dark);
+  font-weight: normal;
+  font-size: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card-reasons-icon{
+  background: #FFFFFF;
+  box-shadow: 1px 1px 3px rgba(181, 181, 181, 0.9), -1px -1px 2px rgba(255, 255, 255, 0.9), 1px -1px 2px rgba(181, 181, 181, 0.2), -1px 1px 2px rgba(181, 181, 181, 0.2), inset -1px -1px 2px rgba(181, 181, 181, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-reasons-icon svg{
+  width: 100%;
+}
+/*=========================Section Reasons========================*/
+
+/*=========================Section Price========================*/
+.price__wrapper{
+  margin-bottom: 130px;
+}
+.wheels,
+.docs{
+  display: flex;
+  align-items: center;
+}
+.docs{
+  margin-top: 24px;
+}
+.docs label,
+.wheels label{
+ margin: 5px 0 0 5px!important;
+ padding: 0!important;
+}
+.form-check-input .toggleCheck{
+  margin-top: 0;
+}
+.price{
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.price h4{
+  color: var(--text-color-dark);
+  font-weight: bold;
+  font-size: 3rem;
+  padding-left: 5%;
+  padding-bottom: 20px;
+}
+.card-price svg{
+  width: 100%;
+}
+.card-price p{
+  padding-top: 5%;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--text-color-dark);
+}
+.card-price{
+  background: #FBFBFB;
+  box-shadow: 4px 4px 10px rgba(181, 181, 181, 0.9), -4px -4px 8px rgba(255, 255, 255, 0.9), 4px -4px 8px rgba(181, 181, 181, 0.2), -4px 4px 8px rgba(181, 181, 181, 0.2), inset -1px -1px 2px rgba(181, 181, 181, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 8%;
+  max-width: 500px;
+}
+.price h5{
+  color: var(--text-color-dark);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+@media(min-width:992px){
+
+  .price h5{
+    margin-top:0;
+  }
+  .price h4{
+    padding-bottom: 78px;
+  }
+}
+
+.dropdown label{
+  font-weight: 900;
+  font-size: .85rem;
+  color: var(--text-color-dark);
+  width: 100%;
+  margin-bottom: .5rem;
+}
+.dropdown p{
+  padding: 5%;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--text-color-dark);
+}
+.dropdown select, .name input{
+  width: 80%!important;
+  text-align: left;
+  background-color: #FEFEFE;
+  font-weight: 700;
+  font-size: .75rem;
+  color: #2b2a29;
+  border-radius: .35rem;
+}
+.dropdown input{
+  height: calc(1.5em + .75rem + 2px);
+  text-align: left;
+  font-weight: 700;
+  font-size: .85rem;
+  padding: .375rem 1.75rem .375rem .75rem;
+  border-color: #fefefe;
+  border-radius: 5px;
+  border: 1px solid #E3E3E3;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  background: #FEFEFE;
+}
+.dropdown
+.custom-select option{
+  transition: 3s ease-in-out;
+}
+select option[disabled]:first-child {
+  display: none;
+}
+
+.datepicker-here{
+  background: #ffffff !important;
+  color: var(--text-color-dark)!important;
+  border-radius: .35rem
+}
+
+.address-input input{
+  width: 100%;
+  background: #ffffff !important;
+  color: var(--text-color-dark)!important;
+  border-radius: .35rem;
+  font-weight: lighter!important;
+}
+.form-check-input{
+  height: calc(0.5em + .75rem)!important;
+  box-shadow: none!important;
+}
+
+.check-form{
+  padding: 5% 0 0 0;
+}
+.dropdown .btn {
+  background: #E31E24;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: .75rem;
+  color: #F9F9F9;
+  padding: 1vh 2vh 1vh 2vh;
+}
+.card-reasons__item{
+  margin-bottom: 20px;
+}
+.condition{
+  margin-top: 39px;
+}
+.condition__body{
+  display: flex;
+}
+.condition__body div:first-child{
+  margin-right: 42px;
+}
+.condition span,
+.form-floating label{
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color:  var(--text-color-dark);
+}
+.form-floating textarea{
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: 1px solid #E3E3E3;
+  max-width: 310px;
+  height: 130px;
+  resize: none;
+}
+/*=========================Section Price========================*/
+
+/*=========================Section Help========================*/
+.help{
+  background: #2B2A29;
+  padding-top: 5%;
+  padding-bottom: 86px;
+}
+.help .btn {
+  background: #FFED00;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: .75rem;
+  color: var(--text-color-dark);
+  border-color: var(--color-red);
+  width: 236px!important;
+  height: 50px;
+}
+.help .form-control {
+  height: 50px;
+  font-weight: 900;
+  font-size: 14px;
+}
+.help h5{
+  padding: 0 0 52px 5%;
+  font-weight: bold;
+  color: #F9F9F9;
+  font-size: calc(34px + 14 * ((100vw - 375px) / (1920 - 375)));
+}
+
+.help__description{
+  padding: 0 5%;
+  margin-top: 51px;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+.help__description ul{
+  color: var(--color-red);
+}
+.help__description ul span{
+  color: #FFFFFF;
+}
+.help__title{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+.help__title,
+.help__subtitle{
+  margin-bottom: 13px;
+}
+.help__title:first-child{
+  margin-bottom: 20px;
+}
+.action-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  margin: 0 auto;
+  background: #E31E24;
+  border-radius: 10px;
+}
+.action-row label{
+  margin: 5px 0;
+}
+.btn-help{
+  width: 100%;
+  height: 50px;
+  background: #FFED00;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 16px;
+  color: #000000;
+}
+.help-form__input{
+  width: 100%;
+}
+.help-form__input label{
+  width: 100%;
+}
+.help__wrapper{
+  padding: 0;
+}
+@media(min-width:600px){
+  .help-form__input{
+    width: 80%;
+  }
+  .action-row{
+    max-width: 80%;
+    width: 80%;
+  }
+}
+@media(min-width:800px){
+  .help-form__input{
+    width: 60%;
+  }
+  .help__wrapper{
+    padding: 0 5%;
+  }
+}
+@media(min-width:1200px){
+  .btn-help{
+    margin-top: 0;
+  }
+  .action-row label{
+    margin: 0;
+  }
+  .help-form__input {
+    width: 100%;
+    flex: 1;
+    margin: 0 10px;
+  }
+  .help-form__input:nth-child(1),
+  .help-form__input:nth-child(2){
+    flex: 1.4;
+  }
+  .help-form__input:last-child{
+    margin: 0;
+  }
+}
+@media(min-width:1440px){
+  .help-form__input {
+    margin: 0 20px;
+  }
+  .help-form__input:last-child{
+    margin: 0;
+  }
+}
+@media (min-width:1920px){
+  .help h5{
+    font-size: 48px;
+  }
+}
+/*=========================Section Help========================*/
+
+/*=========================Section About========================*/
+  .about{
+    padding: 65px 0;
+    color: #000000;
+  }
+  .about h5{
+    margin-bottom: 36px;
+    padding: 0 5%;
+  }
+  .about__wrapper{
+    padding: 0 9.14%;
+  }
+/*=========================Section About========================*/
+/*=========================Section Questions========================*/
+  .accordion p{
+    display: none;
+    margin: 10px 10px 10px 53px;
+  }
+  .questions{
+    background: #E9E7E8;
+    padding: 61px 0 90px;
+  }
+  .questions h5{
+    padding: 0 5%;
+  }
+  .questions__wrapper{
+    padding: 0 9.14%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 52px 0 0;
+    column-gap: 40px;
+  }
+  @media (min-width: 996px){
+    .questions__wrapper{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1440px){
+    .questions__wrapper{
+      column-gap: 136px;
+    }
+  }
+  .questions__column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .questions__column li {
+    overflow: hidden;
+    font-size: calc(14px + 4 * ((100vw - 375px)/ (1920 - 375)));
+    line-height: 24px;
+    color: #000000;
+    background: #FBFBFB;
+    box-shadow: -2px 2px 4px rgba(110, 110, 110, 0.2), 2px -2px 4px rgba(110, 110, 110, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.9), 2px 2px 5px rgba(110, 110, 110, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(110, 110, 110, 0.5);
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 8px 0;
+  }
+  
+  .questions__column li span {
+    position: relative;
+    padding-left: 53px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .questions__column li span:focus {
+    color: black;
+    outline: 0;
+  }
+  
+  .questions__column li span::before {
+    content: url('../img/icons/questions.svg');
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+  }
+  
+
+
+/*=========================Section Questions========================*/
+
+/*=========================Section Reviews========================*/
+.reviews{
+  padding:5% 5% 102px 5%;
+}
+.reviews h5{
+  color: var(--text-color-dark);
+  font-weight: bold;
+  font-size: 3rem;
+  padding-bottom: 74px;
+}
+.swiper-container{
+  padding-top: 2%!important;
+  padding-bottom: 2%!important;
+}
+.swiper-slide p{
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--text-color-dark);
+}
+.swiper-slide{
+  background: #DEDEDE;
+  border-radius: 10px;
+  padding: 2%;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: var(--text-color-dark)!important;
+  display: none!important;
+}
+.swiper-button-next {
+  left: 67%!important;
+}
+.swiper-button-prev {
+  right: 67%!important;
+  left: auto!important;
+}
+.swiper-container-autoheight .swiper-wrapper{
+  margin-bottom: 20px;
+}
+@media(min-width:1200px){
+  .swiper-button-next, .swiper-button-prev {
+    display: flex!important;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+}
+/*=========================Section Reviews========================*/
+
+/*=========================Section Contacts========================*/
+.contacts{
+  background: #2B2A29;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #FFFFFF;
+  column-gap: 32px;
+}
+.contacts a{
+  color: #FFFFFF;
+}
+.contacts span{
+  font-weight: bold;
+  font-size: 42px;
+  display: block;
+  margin-top: 32px;
+}
+.contacts__list{
+  order: -1;
+  margin-bottom: 20px;
+}
+.contacts__list ul{
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 24px;
+}
+@media (min-width: 768px){
+  .contacts{
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  .contacts__list{
+    order: 0;
+  }
+}
+/*=========================Section Contacts========================*/
+
+
+/*=========================Media========================*/
+
+/*Desctop*/
+@media screen and (min-width: 1921px) and (max-width: 2560px){}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px){}
+
+@media screen and (min-width: 1110px) and (max-width: 1365px){}
+/*Desctop*/
+
+/*iPad Pro*/
+@media screen and (min-width: 1022px) and (max-width: 1366px) and (orientation: portrait){
+  .navbar-brand svg {
+    width: 80%;
+  }
+  .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  /* ================Section Header=====================*/
+
+  /*================Section Header===================== */
+
+  /*================Section Reasons=====================*/
+  .reasons h2, .price h4, .reviews h5 {
+    padding-bottom: 5vh;
+  }
+  .card-reasons {
+    margin: 0 0 2vh 0;
+    padding: 4%;
+  }
+  .card-reasons-icon svg {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+  .card-reasons-icon {
+    height: 10vh;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+  .card-price p {
+    font-size: 1rem;
+  }
+  /*================Section Price=====================*/
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+@media screen and (min-width: 812px) and (max-width: 1021px) and (orientation: landscape){
+  .navbar-brand svg {
+    width: 80%;
+  }
+
+  /*================Section Header=====================*/
+
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    height: 100%;
+  }
+  .card-reasons-icon {
+    margin: 10%;
+    padding: 23%;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .card-price {
+    margin: 0;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+
+  /*================Section Price=====================*/
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+
+/*iPad*/
+@media screen and (min-width: 1024px) and (max-width: 1109px)and (orientation: landscape){
+  /*---------Font Size Section----------*/
+  .reasons h2, .price h4, .reviews h5   {
+    font-size: 2rem;
+  }
+  /*---------Font Size Section----------*/
+  .navbar-brand svg {
+    width: 80%;
+  }
+
+  /*================Section Header=====================*/
+
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    height: 100%;
+  }
+  .card-reasons-icon {
+    margin: 10%;
+    padding: 23%;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .card-price {
+    margin: 0;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+
+  /*================Section Price=====================*/
+
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 811px)and (orientation: portrait){
+  /*---------Font Size Section----------*/
+  .reasons h2, .price h4, .reviews h5   {
+    font-size: 3rem;
+  }
+  /*---------Font Size Section----------*/
+
+
+  /*================Section Header=====================*/
+
+  .background-header .track-img {
+    bottom: 22%;
+    right: 3vh;
+    z-index: 3;
+  }
+  .track-img img {
+    height: 25vh;
+  }
+  .background-header .rover-img {
+    bottom: 33%;
+    left: -23vh;
+  }
+  .rover-img svg {
+    height: 12vh;
+    width: 100%;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header h1 span {
+    font-size: 2rem;
+  }
+  .text-header {
+    top: 28%;
+  }
+  .action-header-text p {
+    font-size: 1.3rem;
+  }
+  .action-header-text svg {
+    width: 3vh;
+    margin-left: 1%;
+  }
+  .action-header-text {
+    padding-top: 33%;
+  }
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    margin: 0 0 2vh 0;
+  }
+  .card-reasons-icon {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+  .price h4 {
+    padding-bottom: 0;
+  }
+  .dropdown p {
+    font-size: 2rem;
+  }
+  .price h5 {
+    margin-top: 10%;
+    font-size: 2rem;
+  }
+  .dropdown label, .dropdown input{
+    font-size: 1.2rem;
+  }
+  .dropdown select, .name input, .dropdown .btn {
+    font-size: 1rem;
+  }
+  .card-price svg {
+    padding-bottom: 2vh;
+  }
+  /*================Section Price=====================*/
+
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+
+/*Mobile*/
+@media screen and (min-width: 667px) and (max-width: 767px) and (orientation: landscape){
+  /*---------Font Size Section----------*/
+  .reasons h2, .price h4, .reviews h5   {
+    font-size: 2rem;
+  }
+  /*---------Font Size Section----------*/
+  .navbar-brand svg {
+    width: 80%;
+  }
+
+  /*================Section Header=====================*/
+  header h1 {
+    font-size: 2rem;
+  }
+  header h1 span {
+    font-size: 1.5rem;
+  }
+  .text-header {
+    top: 40%;
+  }
+  .action-header-text svg {
+    width: 3vh;
+    margin-left: 1%;
+  }
+  .action-header-text {
+    padding-top: 25%;
+  }
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    height: 100%;
+  }
+  .card-reasons-icon {
+    margin: 10%;
+    padding: 23%;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+  /*================Section Price=====================*/
+
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+@media screen and (min-width: 567px) and (max-width: 666px) and (orientation: landscape){
+  /*---------Font Size Section----------*/
+  .reasons h2, .price h4, .reviews h5   {
+    font-size: 2rem;
+  }
+  /*---------Font Size Section----------*/
+  .navbar-brand svg {
+    width: 80%;
+  }
+
+  /*================Section Header=====================*/
+  header h1 {
+    font-size: 2rem;
+  }
+  header h1 span {
+    font-size: 1.5rem;
+  }
+  .text-header {
+    top: 40%;
+  }
+  .action-header-text svg {
+    width: 3vh;
+    margin-left: 1%;
+  }
+  .action-header-text {
+    padding-top: 25%;
+  }
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    height: 100%;
+  }
+  .card-reasons-icon {
+    margin: 10%;
+    padding: 23%;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+
+  /*================Section Price=====================*/
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+@media screen and (min-width: 375px) and (max-width: 566px){
+  /*---------Font Size Section----------*/
+  .reasons h2, .price h4, .reviews h5   {
+    font-size: 2rem;
+  }
+  /*---------Font Size Section----------*/
+ 
+
+  /*================Section Header=====================*/
+  .text-header {
+    top: 40%;
+  }
+  .action-header-text svg {
+    width: 3vh;
+    margin-left: 1%;
+  }
+  .action-header-text {
+    padding-top: 25%;
+  }
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    height: 100%;
+  }
+  .card-reasons-icon {
+    margin: 10%;
+    padding: 23%;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+  /*================Section Price=====================*/
+
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+
+  /*---------Font Size Section----------*/
+  .reasons h2, .price h4, .reviews h5   {
+    font-size: 2rem;
+  }
+  /*---------Font Size Section----------*/
+
+  .navbar-brand svg {
+    width: 80%;
+  }
+
+  /*================Section Header=====================*/
+  .text-header {
+    top: 40%;
+  }
+  .action-header-text svg {
+    width: 3vh;
+    margin-left: 1%;
+  }
+  .action-header-text {
+    padding-top: 25%;
+  }
+  /*================Section Header=====================*/
+
+  /*================Section Reasons=====================*/
+  .card-reasons {
+    height: 100%;
+  }
+  .card-reasons-icon {
+    margin: 10%;
+    padding: 23%;
+  }
+
+  /*================Section Reasons=====================*/
+
+  /*================Section Price=====================*/
+
+  .dropdown p {
+    font-size: 1.2rem !important;
+  }
+  .card-price {
+    margin: 0;
+  }
+  .price h5 {
+    margin-top: 10%;
+  }
+
+  /*================Section Price=====================*/
+
+  /*================Section Help=====================*/
+
+  /*================Section Help=====================*/
+
+  /*================Section Reviews=====================*/
+  .swiper-button-next, .swiper-button-prev {
+    display: none!important;
+  }
+  /*================Section Reviews=====================*/
+}
+/*Mobile*/
+
+/*=========================Media========================*/
+@media (min-width: 786px){
+  h4 u br,
+  h5 u br{
+    display: none;
+  }
+}
+@media (min-width: 850px){
+  h2 u br{
+    display: none;
+  }
+}
+@media (min-width:1440px){
+  .card-price{
+    margin: 2%;
+  }
+}
+
