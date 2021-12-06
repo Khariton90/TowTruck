@@ -95,8 +95,8 @@ section, header,footer{
 }
 h1{
   font-weight: bold;
-  font-size: calc(32px + 32 * ((100vw - 375px) / (1920 - 375)));
-  line-height: calc(34px + 40 * ((100vw - 375px) / (1920 - 375)));
+  font-size: calc(32px + 38 * ((100vw - 375px) / (1920 - 375)));
+  line-height: calc(34px + 46 * ((100vw - 375px) / (1920 - 375)));
   color: #2B2A29;
   padding-top: 150px;
 }
@@ -107,9 +107,10 @@ h1{
   padding-top: 5%;
 }
 .subtitle{
-  font-size: calc(22px + 22 * ((100vw - 375px) / (1920 - 375)));
+  font-size: calc(22px + 32 * ((100vw - 375px) / (1920 - 375)));
   text-decoration: underline;
   text-decoration-color: #FFED00;
+  letter-spacing: 1.5px;
 }
 .call{
   display: flex;
@@ -123,18 +124,18 @@ h1{
   margin-right: 15px;
 }
 .call__button{
-  height: 20.4px;
   background: #E31E24;
   border-radius: 50px;
   color: #F9F9F9;
-  padding: 0px 20px;
-  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   font-weight: 900;
   border: none;
+  font-size: .5rem;
+  color: #F9F9F9;
+  padding: 11px 22px;
 }
 .call__button:hover{
   transition: all 0.3s ease;
@@ -164,6 +165,9 @@ h1{
   .towtruck{
     width: 70%;
     float: right;
+  }
+  .call__button{
+    font-size: 0.75rem;
   }
 }
 @media (min-width: 600px){
@@ -225,11 +229,11 @@ h1{
 
 @media( min-width:1920px ){
   h1{
-    font-size: 64px;
+    font-size: 66px;
     line-height: 74px;
   }
   .subtitle{
-    font-size: 44px;
+    font-size: 50px;
   }
 }
 .info-icon{
